@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 24 18:57:16 2021
+# Process ID: 12172
+# Current directory: C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1404 C:\Users\olivi\OneDrive\Desktop\faculta\an2\sem2\ac\lab\MIPS\MIPS.xpr
+# Log file: C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/vivado.log
+# Journal file: C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.xpr
+remove_files  C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/inst_IF.vhd
+file delete -force C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/inst_IF.vhd
+close [ open C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd w ]
+add_files C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/cons.xdc
+set_property target_constrs_file C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/cons.xdc [current_fileset -constrset]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

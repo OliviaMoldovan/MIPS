@@ -1,0 +1,584 @@
+
+*** Running vivado
+    with args -log MIPS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source MIPS.tcl -notrace
+Command: synth_design -top MIPS -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10564 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 283.211 ; gain = 72.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPS' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:44]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:217]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:261]
+WARNING: [Synth 8-614] signal 'ID_EX' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:259]
+WARNING: [Synth 8-614] signal 'EX_MEM' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:312]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:36' bound to instance 'C1' of component 'MPG' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:323]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (1#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:36' bound to instance 'C2' of component 'MPG' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:324]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:37' bound to instance 'C3' of component 'SSD' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (2#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/SSD.vhd:46]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd:36' bound to instance 'C4' of component 'IFetch' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd:98]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (3#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IFetch.vhd:49]
+INFO: [Synth 8-3491] module 'IDecode' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:35' bound to instance 'C5' of component 'IDecode' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'IDecode' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:53]
+INFO: [Synth 8-3491] module 'RF' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/RF.vhd:36' bound to instance 'C1' of component 'RF' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'RF' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/RF.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'RF' (4#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/RF.vhd:48]
+WARNING: [Synth 8-3848] Net rt in module/entity IDecode does not have driver. [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:49]
+WARNING: [Synth 8-3848] Net rd in module/entity IDecode does not have driver. [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:50]
+WARNING: [Synth 8-3848] Net we in module/entity IDecode does not have driver. [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'IDecode' (5#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:53]
+INFO: [Synth 8-3491] module 'UC' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/UC.vhd:36' bound to instance 'C6' of component 'UC' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'UC' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/UC.vhd:50]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/UC.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'UC' (6#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/UC.vhd:50]
+INFO: [Synth 8-3491] module 'ExecutionUnit' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:36' bound to instance 'C7' of component 'ExecutionUnit' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:329]
+INFO: [Synth 8-638] synthesizing module 'ExecutionUnit' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:53]
+WARNING: [Synth 8-614] signal 'func' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:63]
+INFO: [Synth 8-226] default block is never used [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:75]
+WARNING: [Synth 8-614] signal 'ReadData1' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:73]
+WARNING: [Synth 8-614] signal 'op2' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:73]
+WARNING: [Synth 8-614] signal 'sa' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:73]
+WARNING: [Synth 8-614] signal 'mult' is read in the process but is not in the sensitivity list [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:73]
+WARNING: [Synth 8-3848] Net iesireMuxRegDst in module/entity ExecutionUnit does not have driver. [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ExecutionUnit' (7#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:53]
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MEM.vhd:36' bound to instance 'C8' of component 'MEM' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:330]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MEM.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (8#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MEM.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (9#1) [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:44]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port iesireMuxRegDst[2]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port iesireMuxRegDst[1]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port iesireMuxRegDst[0]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[15]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[14]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[13]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[12]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[11]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[10]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[9]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[8]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[7]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[6]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[5]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[4]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[3]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[2]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[1]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port ReadData2[0]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port rt[2]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port rt[1]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port rt[0]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port rd[2]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port rd[1]
+WARNING: [Synth 8-3331] design ExecutionUnit has unconnected port rd[0]
+WARNING: [Synth 8-3331] design RF has unconnected port we
+WARNING: [Synth 8-3331] design IDecode has unconnected port rt[2]
+WARNING: [Synth 8-3331] design IDecode has unconnected port rt[1]
+WARNING: [Synth 8-3331] design IDecode has unconnected port rt[0]
+WARNING: [Synth 8-3331] design IDecode has unconnected port rd[2]
+WARNING: [Synth 8-3331] design IDecode has unconnected port rd[1]
+WARNING: [Synth 8-3331] design IDecode has unconnected port rd[0]
+WARNING: [Synth 8-3331] design IDecode has unconnected port instr[15]
+WARNING: [Synth 8-3331] design IDecode has unconnected port instr[14]
+WARNING: [Synth 8-3331] design IDecode has unconnected port instr[13]
+WARNING: [Synth 8-3331] design IDecode has unconnected port enable
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[15]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[14]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[13]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[12]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[11]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[10]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[9]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[8]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[7]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[6]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[5]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[4]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[3]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[2]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[1]
+WARNING: [Synth 8-3331] design IDecode has unconnected port WriteAddres[0]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[4]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[3]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[2]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[15]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[14]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[13]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[12]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[11]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[10]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[9]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[8]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[4]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[3]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[2]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 320.641 ; gain = 110.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 320.641 ; gain = 110.313
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/cons.xdc]
+Finished Parsing XDC File [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 612.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 612.926 ; gain = 402.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 612.926 ; gain = 402.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 612.926 ; gain = 402.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ROM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/ExecutionUnit.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'Ext_Imm_reg' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:244]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 612.926 ; gain = 402.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               84 Bit    Registers := 1     
+	               57 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 8     
+	   8 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MIPS 
+Detailed RTL Component Info : 
++---Registers : 
+	               84 Bit    Registers := 1     
+	               57 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module IFetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	 257 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module IDecode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module UC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 9     
+Module ExecutionUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   8 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---RAMs : 
+	              512 Bit         RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'ID_EX_reg' and it is trimmed from '84' to '81' bits. [C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:275]
+DSP Report: Generating DSP C7/multOp, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP C7/multOp.
+DSP Report: operator C7/multOp is absorbed into DSP C7/multOp.
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[15]
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[14]
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[13]
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[12]
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[11]
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[10]
+WARNING: [Synth 8-3331] design MIPS has unconnected port led[9]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[4]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[3]
+WARNING: [Synth 8-3331] design MIPS has unconnected port btn[2]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[15]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[14]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[13]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[12]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[11]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[10]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[9]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[8]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[4]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[3]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[2]
+WARNING: [Synth 8-3331] design MIPS has unconnected port sw[1]
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[60]' (FD) to 'IF_ID_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[48]' (FD) to 'IF_ID_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[49]' (FD) to 'IF_ID_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[50]' (FD) to 'IF_ID_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[51]' (FD) to 'IF_ID_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[52]' (FD) to 'IF_ID_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[53]' (FD) to 'IF_ID_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[54]' (FD) to 'IF_ID_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[55]' (FD) to 'IF_ID_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[56]' (FD) to 'IF_ID_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[57]' (FD) to 'IF_ID_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[58]' (FD) to 'IF_ID_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[59]' (FD) to 'IF_ID_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[61]' (FD) to 'IF_ID_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[62]' (FD) to 'IF_ID_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[63]' (FD) to 'IF_ID_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[12]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[8]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[13]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[9]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[14]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[10]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[12]' (FD) to 'ID_EX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[13]' (FD) to 'ID_EX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[14]' (FD) to 'ID_EX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[15]' (LD) to 'C5/Ext_Imm_reg[7]'
+INFO: [Synth 8-3886] merging instance 'C5/Ext_Imm_reg[7]' (LD) to 'C5/Ext_Imm_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[7]' (FD) to 'ID_EX_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[8]' (FD) to 'ID_EX_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[9]' (FD) to 'ID_EX_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[10]' (FD) to 'ID_EX_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[11]' (FD) to 'ID_EX_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led_reg[8] )
+WARNING: [Synth 8-3332] Sequential element (led_reg[8]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[16]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[17]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[18]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[19]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[20]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[21]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[22]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[23]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[24]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[25]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[26]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[27]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[28]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[29]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[30]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C1/count_int_reg[31]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_reg[15]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_reg[14]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (IF_ID_reg[13]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_reg[80]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_reg[79]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_reg[78]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_reg[73]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (ID_EX_reg[70]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (EX_MEM_reg[40]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (EX_MEM_reg[39]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (EX_MEM_reg[38]) is unused and will be removed from module MIPS.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 612.926 ; gain = 402.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives      | 
++------------+--------------------+-----------+----------------------+-----------------+
+|MIPS        | C8/r_reg           | Implied   | 32 x 16              | RAM32X1S x 16   | 
+|MIPS        | C5/C1/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6      | 
++------------+--------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MIPS        | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 622.848 ; gain = 412.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 622.848 ; gain = 412.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[1]' (FD) to 'ID_EX_reg[65]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[2]' (FD) to 'ID_EX_reg[66]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[0]' (FD) to 'ID_EX_reg[64]'
+INFO: [Synth 8-3886] merging instance 'ID_EX_reg[3]' (FD) to 'ID_EX_reg[77]'
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[11]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[6]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[5]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[4]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[3]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[2]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[1]) is unused and will be removed from module MIPS.
+WARNING: [Synth 8-3332] Sequential element (C5/Ext_Imm_reg[0]) is unused and will be removed from module MIPS.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    22|
+|3     |DSP48E1  |     1|
+|4     |LUT1     |    48|
+|5     |LUT2     |    23|
+|6     |LUT3     |    38|
+|7     |LUT4     |    18|
+|8     |LUT5     |    52|
+|9     |LUT6     |    92|
+|10    |MUXF7    |    16|
+|11    |RAM32M   |     6|
+|12    |RAM32X1S |    16|
+|13    |FDCE     |    24|
+|14    |FDRE     |   169|
+|15    |IBUF     |     7|
+|16    |OBUF     |    20|
+|17    |OBUFT    |     7|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   560|
+|2     |  C1     |MPG           |    45|
+|3     |  C2     |MPG_0         |     4|
+|4     |  C3     |SSD           |    40|
+|5     |  C4     |IFetch        |   136|
+|6     |  C5     |IDecode       |    49|
+|7     |    C1   |RF            |    49|
+|8     |  C7     |ExecutionUnit |   100|
+|9     |  C8     |MEM           |    16|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 646.141 ; gain = 143.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 646.141 ; gain = 435.813
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM32X1S => RAM32X1S (RAMS32): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 646.141 ; gain = 435.813
+INFO: [Common 17-1381] The checkpoint 'C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.runs/synth_1/MIPS.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 646.141 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 30 23:33:49 2021...

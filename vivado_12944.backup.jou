@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 31 11:25:24 2021
+# Process ID: 12944
+# Current directory: C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13004 C:\Users\olivi\OneDrive\Desktop\faculta\an2\sem2\ac\lab\MIPS\MIPS.xpr
+# Log file: C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/vivado.log
+# Journal file: C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.xpr
+close [ open C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd w ]
+add_files C:/Users/olivi/OneDrive/Desktop/faculta/an2/sem2/ac/lab/MIPS/MIPS.srcs/sources_1/new/IDecode.vhd
